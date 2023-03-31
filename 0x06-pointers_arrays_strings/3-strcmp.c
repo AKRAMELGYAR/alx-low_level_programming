@@ -11,7 +11,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int equal = 0;
 
-	while (*si)
+	while (*s1)
 	{
 		if (*s1 != *s2)
 		{
