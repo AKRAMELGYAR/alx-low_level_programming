@@ -5,29 +5,28 @@
  * at a given position.
  * @head: head of a list.
  * @idx: index of the list where the new node is
- * added.
- * @n: integer element.
- *
- * Return: the address of the new node, or NULL if it
- * failed.
- */
+ * added
+ * @n: integer element
+ * Return: addres or null
+*/
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int x;
 	listint_t *new;
-	listint_t *y;
+	listint_t *h;
 
-	y = *head;
+	h = *head;
 
 	if (idx != 0)
 	{
 		for (x = 0; x < idx - 1 && h != NULL; x++)
 		{
-			y = y->next;
+			h = h->next;
 		}
 	}
 
-	if (y == NULL && idx != 0)
+	if (h == NULL && idx != 0)
 		return (NULL);
 
 	new = malloc(sizeof(listint_t));
@@ -43,9 +42,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	else
 	{
-		new->next = y->next;
-		y->next = new;
+		new->next = h->next;
+		h->next = new;
 	}
 
-	return (new);
-}
+	return (new)
