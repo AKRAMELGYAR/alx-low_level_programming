@@ -5,7 +5,7 @@
 
 /**
  * struct listint_s - singly linked lists
- * @x: int
+ * @n: int
  * @next: points to the next node
  *
  * Description: singly linked list node structure
@@ -13,7 +13,7 @@
 
 typedef struct listint_s
 {
-	int x;
+	int n;
 	struct listint_s *next;
 } listint_t;
 
