@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - dfkvbjdbv dljvnz s dj vfd vl 
+ * get_bit - dfkvbjdbv dljvnz s dj vfd vl
  * svfsdbljn
  * @n: The bit
  * @index: The index to get the value at
